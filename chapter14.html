@@ -1,0 +1,23 @@
+<html>
+<script>
+function validateForm() {
+if (document.forms[0].myName.value == "") {
+alert("Name field cannot be empty.");
+return false; } // end if
+if (document.forms[0].myEmail.value == "") {
+alert("E-mail address field cannot be empty.");
+return false; } // end if 
+alert("Form Submitted");
+return true; } // end function validateForm
+</script>
+<body>
+<form method="post" action="http://www.markmurtha.com/csis128/readform.asp" onsubmit="return validateForm()";>
+ <label for="myName">Name:</label>
+ <input type="text" name="myName" id="myName">
+ <br>
+ <label for="myEmail">E-mail Address:</label>
+ <input type="text" name="myEmail" id="myEmail">
+ <input type="submit" value="Sign Up Now" id="submit">
+</form>
+</body>
+</html>
